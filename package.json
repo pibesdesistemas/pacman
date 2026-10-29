@@ -1,0 +1,11 @@
+{
+  "name": "jspacman-x-player-card",
+  "version": "1.0.0",
+  "description": "Ms. Pac-Man single-player web game (based on pacman.js.org) adapted for X (Twitter) Player Cards",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT"
+}
+

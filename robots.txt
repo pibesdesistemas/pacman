@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://pibesdesistemas.github.io/pacman/sitemap.xml

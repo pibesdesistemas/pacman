@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>@pibesdesistemas - Ms. Pac-Man para 𝕏.com </title>
+    <meta name="description" content="💡 Goncy ">
+
+    <!-- Metadatos de Twitter Player Card -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:title" content=">@pibesdesistemas - Ms. Pac-Man para 𝕏.com">
+    <meta name="twitter:description" content="💡 Goncy ">
+    <meta name="twitter:image" content="https://pibesdesistemas.github.io/pacman/assets/preview.png">
+    <meta name="twitter:player" content="https://pibesdesistemas.github.io/pacman/play.html">
+    <meta name="twitter:player:width" content="480">
+    <meta name="twitter:player:height" content="480">
+
+    <!-- Open Graph Fallback -->
+    <meta property="og:type" content="video.other">
+    <meta property="og:title" content="@pibesdesistemas - Ms. Pac-Man para 𝕏.com">
+    <meta property="og:description" content="💡 Goncy">
+    <meta property="og:image" content="https://pibesdesistemas.github.io/pacman/assets/preview.png">
+    <meta property="og:image:width" content="480">
+    <meta property="og:image:height" content="480">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#222222">
+    <link rel="stylesheet" href="./styles.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "rasti/Model.js": "./js/vendor/rasti/Model.js",
+            "rasti/View.js": "./js/vendor/rasti/View.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Contenedor Principal del Juego -->
+    <div class="js-pacman-container">
+        <div class="js-pacman-playground"></div>
+    </div>
+
+    <!-- Esquema de Controles Híbrido: D-Pad Virtual (visible en dispositivos táctiles @media (pointer: coarse)) -->
+    <div class="virtual-dpad" aria-label="Controles táctiles">
+        <button type="button" class="dpad-btn dpad-up" data-dir="u" aria-label="Arriba">▲</button>
+        <button type="button" class="dpad-btn dpad-left" data-dir="l" aria-label="Izquierda">◀</button>
+        <button type="button" class="dpad-btn dpad-pause" data-action="pause" aria-label="Pausa">II</button>
+        <button type="button" class="dpad-btn dpad-right" data-dir="r" aria-label="Derecha">▶</button>
+        <button type="button" class="dpad-btn dpad-down" data-dir="d" aria-label="Abajo">▼</button>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
